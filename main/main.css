@@ -1,0 +1,193 @@
+@font-face {
+    font-family:poppins-medium;
+    src: url("../font/Poppins-Medium.ttf");
+}
+@font-face {
+    font-family:poppins-bold;
+    src: url("../font/Poppins-Bold.ttf");
+}
+@font-face {
+    font-family:poppins-regular;
+    src: url("../font/Poppins-Regular.ttf");
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+.slider{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+.slider .bg{
+    width: 112%;
+    height: 115%;
+    background-image:url("../img/5.jpg");
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    left: -6%;
+    top: -9%;
+    z-index: -1;
+    
+}
+.nav{
+    display: grid;
+    grid-template-columns: minmax(200px,1fr) minmax(380px,2fr) minmax(150px,1fr);
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.03));
+    
+}
+.nav .left{
+    font-family: poppins-bold;
+    font-size: 1.2em;
+    color: #fff;
+}
+.nav .left i{
+    margin: 20px;
+}
+.nav .left :hover{
+    cursor: pointer;
+    color:#9FC1FF;
+}
+.nav .center{
+    display: flex;
+    justify-content: space-evenly;
+    font-family: poppins-medium;
+}
+.nav .center .item{
+    transition: .7s ease-out;
+
+}
+.nav .center .item:hover{
+    color: #9FC1FF;
+    cursor: pointer; 
+}
+.nav .center .item .inner-border{
+    width: 0%;
+    border-bottom: 1px solid #9FC1FF;
+    transition: .7s ease-out;
+}
+.nav .center .item:hover .inner-border{
+    width: 100%;
+    color: #9FC1FF;
+}
+
+.nav .right{
+    display: flex;
+    justify-content: space-evenly;
+
+}
+.nav .right i{
+    font-size: 1.2em;
+    transition: .5s;
+}
+.nav .right i:hover{
+    color: #9FC1FF;
+    cursor: pointer;
+    font-size: 1.4em;
+}
+.games{
+    margin-top: 35px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.game{
+    background-color: rgba(20, 18, 18, 0.637);
+    border-radius: 10px;
+    height: auto;
+    margin:10px;
+    transition: .7s;
+    position: relative;
+    height: 420px;
+}
+.game:hover{
+    background-color: rgba(94, 91, 91, 0.637);
+
+}
+.game img{
+    width: 96%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    margin-top: 10px;
+    border-radius: 5px;
+}
+.game h3{
+    color: white;
+    text-align: center;
+    font-family: poppins-bold;
+    margin: 15px;
+}
+.game p{
+    text-align: justify;
+    color: white;
+    font-family: poppins-regular;
+    font-size: .8em;
+    margin: 0px 15px;
+}
+.game a{
+    display: block;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    font-family: poppins-medium;
+    width: 200px;
+    background-color: rgb(182, 12, 182);
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 20px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    transition: .7s;
+    bottom: 20px;
+    position: absolute;
+}
+.game a:hover{
+    background-color: #e70fe7;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius:15px;
+    width:200px;
+    
+}
+footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.03),rgba(0, 0, 0, 0.4));
+    height: 70px;
+    text-align: center;
+}
+footer i{
+    color: #eee;
+    margin: -10px 30px;
+    font-size: 2em; 
+    transition: .7s;
+    cursor: pointer;
+}
+footer i:hover{
+    transform: translateY(-15px);
+}
+footer p{
+    color: #eee;
+    margin: 10px;
+    font-family: poppins-medium;
+}
+.fa-twitter{
+   color: cyan; 
+}
+.fa-instagram{
+    color: rgb(248, 25, 248);
+}
+.fa-youtube{
+    color: rgb(212, 2, 2);
+}
+.fa-facebook{
+    color: rgb(92, 107, 236);
+}
+.fa-telegram{
+    color: rgb(71, 207, 252);
+}

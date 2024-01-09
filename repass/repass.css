@@ -1,0 +1,141 @@
+
+@font-face {
+    font-family: poppins-regular;
+    src: url("../font/Poppins-Regular.ttf");
+}
+
+@font-face {
+    font-family: poppins-bold;
+    src: url("../font/Poppins-Bold.ttf");
+}
+@font-face {
+    font-family: poppins-medium;
+    src: url("../font/Poppins-Medium.ttf");
+}
+  
+*{
+    padding: 0;
+    margin: 0;
+}
+.creat-text{
+    
+    text-align: center;
+    color: #777;
+    font-family: poppins-regular;
+    font-size: 1em;
+    margin-top: 20px;
+    display: block;
+}
+.creat-text:hover{
+    font-weight: bold;
+    color:purple;
+    transition: .3s ;
+    text-decoration: underline;
+    cursor: pointer;
+
+}
+
+body{
+    background-image: url("../img/1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    z-index: 1;
+}
+.login{
+    background-color: #fff;
+    border-radius: 10px;
+    
+}
+.login .header{
+    text-align: center;
+    margin: 60px;
+    font-size: 25px;
+    color: #333;
+    font-family:poppins-bold ;
+
+}
+
+.login .username,.login .password{
+    font-family: poppins-regular;
+    font-size: .7em;
+    color: #333;
+
+}
+
+.un-container,.pw-container{
+    margin: auto;
+    width: 80%;
+    border-bottom: 1px solid#999;
+    margin-top: 30px;
+    transition: all .7s;
+
+}
+.un-container input,.pw-container input{
+    border: none;
+    font-family: poppins-medium;
+    padding: 15px;
+    outline: none;
+    width: 80%;
+}
+.un-container i ,.pw-container i  {
+    color: #999;
+    transition: all .7s;
+
+}
+
+.un-container:hover i,.pw-container:hover i{
+    color: purple;
+    transition: all .7s;
+}
+.un-container:hover,.pw-container:hover{
+    border-color:purple;
+    transition: all .7s;
+}
+
+
+
+#login{
+    width: 90%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    padding: 15px 20px;
+    border: none;
+    margin-top: 25px;
+    border-radius: 30px;
+    font-family: poppins-bold;
+    font-size: 1em;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    background-image: url("../IMG/2.JPG");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left;
+    transition: 1s;
+    
+}
+
+#login:hover{
+    background-position: right;
+    
+}
+
+
+
+.creat-account:hover{
+    color: purple;
+    border-color: purple;
+}
+
+
+.login{
+    width: 350px;
+    height: 600px;
+    position: absolute;
+    border-radius: 20px;
+    margin-top: 5%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+
+}
